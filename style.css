@@ -1,0 +1,55 @@
+body {
+  background: url('../assets/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: rgba(15,23,42,0.95);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  text-align: center;
+  margin: 20px auto;
+}
+
+.admin-container { max-width: 1000px; }
+
+.logo img { width: 80px; margin-bottom: 15px; }
+
+h1 { color: #22c55e; margin-bottom: 10px; }
+p { color: #cbd5e1; margin-bottom: 20px; font-size: 14px; }
+
+.input-group { margin-bottom: 15px; text-align: left; }
+.input-group label { display:block; margin-bottom:5px; color:#94a3b8; font-weight:bold; }
+input, select { width:100%; padding:12px; border-radius:10px; border:1px solid #334155; background:#1e293b; color:#fff; }
+input:focus, select:focus { border-color:#22c55e; box-shadow:0 0 8px rgba(34,197,94,0.5); }
+
+button { width:100%; padding:14px; border:none; border-radius:12px; background:#22c55e; font-size:16px; font-weight:bold; color:#fff; cursor:pointer; transition:0.3s;}
+button:hover { background:#16a34a; transform:translateY(-2px); }
+
+#msg { margin-top:15px; font-weight:bold; color:#fffb; }
+
+/* Admin Table */
+#playerTable { width:100%; border-collapse: collapse; margin-top:20px; background:#0f172a; border-radius:10px; overflow:hidden;}
+#playerTable th, #playerTable td { padding:10px; text-align:center; border-bottom:1px solid #334155; font-size:14px;}
+#playerTable th { color:#22c55e; font-weight:bold; }
+#playerTable tbody tr:hover { background: rgba(34,197,94,0.1); }
+#playerTable button.approve { background:#22c55e; color:#fff; }
+#playerTable button.approve:hover { background:#16a34a; }
+#playerTable button.reject { background:#ef4444; color:#fff; }
+#playerTable button.reject:hover { background:#b91c1c; }
+
+/* Bracket */
+#bracket { display:flex; flex-wrap:wrap; justify-content:center; margin-top:20px; }
+.bracket-player { background:#1e293b; padding:12px 20px; margin:8px; border-radius:12px; border:1px solid #22c55e; }
+#playerTable button.whatsapp {
+  background: #25d366; /* WhatsApp green */
+  color: #fff;
+}
+#playerTable button.whatsapp:hover {
+  background: #1ebe5d;
+}

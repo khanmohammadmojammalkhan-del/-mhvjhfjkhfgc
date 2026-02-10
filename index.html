@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eFootball Registration</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="logo"><img src="assets/images/logo.png" alt="Logo"></div>
+  <h1>🎮 eFootball Tournament Registration</h1>
+  <p>Fill the form below to secure your spot!</p>
+
+  <form id="regForm">
+    <div class="input-group">
+      <label>Player Name</label>
+      <input type="text" id="player_name" placeholder="Enter your name" required>
+    </div>
+    <div class="input-group">
+      <label>eFootball ID</label>
+      <input type="text" id="efootball_id" placeholder="Enter eFootball ID" required>
+    </div>
+    <div class="input-group">
+      <label>Device</label>
+      <select id="device" required>
+        <option value="">Select Device</option>
+        <option>Android</option>
+        <option>iOS</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label>Team Name</label>
+      <input type="text" id="team_name" placeholder="Enter team name">
+    </div>
+    <div class="input-group">
+      <label>WhatsApp Number</label>
+      <input type="text" id="whatsapp" placeholder="Enter WhatsApp number" required>
+    </div>
+    <div class="input-group">
+      <label>Entry Fee</label>
+      <input type="number" id="entry_fee" placeholder="Enter amount">
+    </div>
+    <div class="input-group">
+      <label>Transaction Code</label>
+      <input type="text" id="transaction_code" placeholder="Enter transaction code" required>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+
+  <p id="msg"></p>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
